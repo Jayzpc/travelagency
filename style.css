@@ -1,8 +1,23 @@
-<<<<<<< HEAD
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
+
+
+
+
+/* NOTES
+
+WHEN MAKING AN ID = TEXT
+
+IN CSS ITS #TEXT
+
+
+
+
+
+
+*/
 
 :root {
     --main-color: #0065FC;
@@ -12,6 +27,29 @@
 
 .fa-solid, .fa-regular {
     color: var(--main-color);
+}
+
+#top{
+	display:flex;
+	gap: 60%
+}
+
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #eee; /* light grey background */
+  border: 1px solid #ccc;
+  border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.icon-box i {
+  color: #333;
+  font-size: 16px;
 }
 
 .logo{
@@ -25,24 +63,25 @@
     font-size: 1.8rem;
     font-weight: bold;
 }
-header {
+
+.header {
     color: #fff; /* White text color */
     padding: 1rem 2rem; 
     display: flex; /* Enables Flexbox */
-    justify-content: space-between; 
-    align-items: center;
+    gap: 20px; 
+    text-align: right;
     
 }
-
 
 .menu ul {
     list-style: none; 
     display: flex; 
+
 }
 
 .menu ul li {
     margin-left: 1.5rem;
-	padding-top: 12px;
+    /* [disabled]padding-top: 12px; */
 }
 
 .menu ul li:first-child {
@@ -52,30 +91,40 @@ header {
 }
 
 .menu ul li a {
-    color: black;
+    text-color: black;
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem;
-    transition: color 0.3s ease; 
+    transition: color black 0.3s ease; 
 	padding-top: 10px;
 border-radius: 5px;
 
 }
 
 .menu ul li a:hover {
-    color: white; 
-   
-  background-color: #0065FC;
-  font-size: 18px;
+    color: white;
+    background-color: #0065FC;
+    font-size: 18px;
+    text-align: center;
 }
+
+#search {
+  display: flex;
+  align-items: center;
+  gap: 0px; /* optional spacing */
 }
-.search input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+
+#search input[type="text"] {
+  height: 38px;
+  font-size: 16px;
+	font-weight:bold;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 50px;
+}
+
+#search input[type="image"] {
+  height: 38px;
 }
 
 
@@ -249,239 +298,3 @@ display: flex;
 	width: 33%;
 	
 }
-=======
-/****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-}
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
-
-.fa-solid, .fa-regular {
-    color: var(--main-color);
-}
-
-.logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-header {
-    color: #fff; /* White text color */
-    padding: 1rem 2rem; 
-    display: flex; /* Enables Flexbox */
-    justify-content: space-between; 
-    align-items: center;
-    
-}
-
-
-.menu ul {
-    list-style: none; 
-    display: flex; 
-}
-
-.menu ul li {
-    margin-left: 1.5rem;
-	padding-top: 12px;
-}
-
-.menu ul li:first-child {
-    margin-: 0; /* No margin for the first item */
-
-	border-top: 3px solid #0065FC; 
-}
-
-.menu ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem;
-    transition: color 0.3s ease; 
-	padding-top: 10px;
-}
-
-.menu ul li a:hover {
-    color: #0065FC; 
-    
-}
-.search input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-
-.body {
-    display: flex;
-    justify-content: center;
-}
-
-.main-container {
-    width: 100%;
-    padding: 0 50px;
-    box-sizing: border-box;
-	justify-content: center;
-}
-
-.section-title {
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.card .card2 {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card .card2 img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.neutralStar {
-    color: var(--main-bg-color)
-}
-
-/****** Accommodation And Popular ***********/
-.accommodation-and-popular {
-    display: flex;
-    justify-content: space-between;
-}
-
-.accommodation-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-	justify-content: space-between;
-}
-
-/****** Accommodation ***********/
-.accommodation {
-    width: 871px;
-	
-}
-.accommodation-container{
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	gap: 30px;
-	
-}
-.card2{
-	display: flex;
-    width: 250px;
-    height: 207px;
-	border-radius-top-left: 20px;
-	border-radius-top-right: 20px; 
-    border: 5px;
-	box-sizing: border-box;
-}
-
-
-/****** Popular ***********/
-.popular {
-    width: 32%;
-}
-
-.popular-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.popular-cards .card {
-    display: flex;
-    margin-top: 33px;
-}
-
-.popular-cards img {
-  
-    height: 146px;
-border-radius: 20px;
-	
-}
-
-.popular-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.popular-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.popular-cards .card-subtitle {
-    margin: 0;
-}
-
-.popular-cards .card-rating {
-    margin-bottom: 5px;
-}
-
-
-/****** To do in Marseille ***********/
-
-.todo-container{
-	width: "100%";
-	height: "380px";
-
-	
-}
-
-.todo{
-width: 25%;	
-display: flex;	
-}
-
-
-
-/****** footer ***********/
-
-.footercontainer {
-	background-color: var(--main-bg-color);
-	width: 100%;
-	padding: 10px;
-	display: flex;
-	flex-direction: row;
-}
-
-.foot1{
-	width: 33%;
-	text-decoration: none;
-}
-
-.foot1 a {
-	
-	text-decoration: none;
-}
-
-.foot2{
-	width: 33%;
-	
-}
-.foot3{
-	width: 33%;
-	
-}
->>>>>>> 0e94599221eda459f03c167fc6fd583137c5f65a
