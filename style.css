@@ -200,6 +200,11 @@ border-radius: 5px;
     font-weight: 700;
 }
 
+.US{
+ font-weight: 700;	
+	
+}
+   
 .neutralStar {
     color: var(--main-bg-color)
 }
@@ -229,43 +234,42 @@ border-radius: 5px;
 	gap: 30px;
 }
 
-.card2{
-	display: flex;
-	flex-direction: column;
-    width: 250px;
-    height: 207px;
-	border-radius-top-left: 20px;
-	border-radius-top-right: 20px; 
-    border: 5px;
-	box-sizing: border-box;
+.card2 {
+  width: calc((100% - 40px) / 3); /* 3 cards per row with 2 gaps of 20px */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
 }
 
 .popular-cards2{
 	display:flex;
-	
+	flex-wrap: wrap;
 gap:20px;
+
 }
 
 .popular-cards2 .card-content2 {
-    width: 250px;
-	height: 207px;
-    padding-left: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 	background-color: white;
 	 border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+	margin-bottom: 20px;
 	
+
 }
 
 .popular-cards2 img {
-    width: 250px;
     height: 122px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 	border: 5px solid white;
+	object-fit: cover;
 }
 
 /****** Popular ***********/
@@ -299,8 +303,10 @@ gap:20px;
     justify-content: space-between;
     box-sizing: border-box;
 	background-color: white;
-	border-radius: 20px;
-}
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+	}
 
 .popular-cards .card-title {
     margin-top: 10px;
