@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -248,3 +249,475 @@ display: flex;
 	width: 33%;
 	
 }
+=======
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/* NOTES
+
+WHEN MAKING AN ID = TEXT
+
+IN CSS ITS #TEXT
+
+
+
+
+
+
+*/
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid, .fa-regular {
+    color: var(--main-color);
+}
+
+#top{
+	display:flex;
+	gap: 60%;
+
+}
+
+.top {
+  max-width: 1440px;
+	display:flex;
+	align-items: center;
+  text-align: right;
+  margin-inline: auto;
+}
+
+.top img{
+	height:19px;
+	width: 62px;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #eee; /* light grey background */
+  border: 1px solid #ccc;
+  border-top: 0px;
+border-bottom: 0px;
+}
+
+.icon-box i {
+  color: #333;
+  font-size: 16px;
+}
+
+.logo{
+	width: 191px;
+	height: 60px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.header {
+    color: #fff; /* White text color */
+    padding: 1rem 2rem; 
+   
+    gap: 20px; 
+   
+    
+}
+.menu{
+	margin-left: auto;
+}
+
+.menu ul {
+    list-style: none; 
+    display: flex; 
+
+}
+
+.menu ul li {
+    margin-left: 1.5rem;
+    /* [disabled]padding-top: 12px; */
+}
+
+.menu ul li:first-child {
+    margin-: 0; /* No margin for the first item */
+
+	
+}
+
+.menu ul li a {
+    text-color: #0065FC;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color #0065FC 0.3s ease; 
+	padding-top: 10px;
+
+
+}
+
+.menu ul li a:hover {
+    color: #0065FC;
+   
+    font-size: 18px;
+    text-align: center;
+	border-top: 2px solid #0065FC;
+}
+
+/* Search works   */
+
+#search {
+  display: flex;
+  align-items: center;
+  gap: 0px; /* optional spacing */
+}
+
+#search input[type="text"] {
+  height: 38px;
+  font-size: 16px;
+	font-weight:bold;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 50px;
+}
+
+#search input[type="image"] {
+  height: 38px;
+}
+/* /Search  */
+
+
+
+
+/* Nav 2 Buttons  */
+
+#nav2-container{
+    display: flex;
+	flex-direction: row;
+    padding-bottom: 4px;
+    padding-left: 19px;
+    padding-top: 4px;
+    padding-right: 19px;
+	flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav2 {
+	display: flex;
+	height: 50px;
+	width:151px;
+	border: 1px solid #D9D9D9;
+	border-radius: 25px;
+	font-weight:bold;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s ease; /* smooth effect */
+	gap: 20px;
+
+}
+
+.nav2:hover {
+	background-color: #DEEBFF;          /* Had chatgpt find a typo, backround dont work. You may laugh now */
+	opacity: 1;
+
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+	justify-content: center;
+	 margin: auto;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card .card2 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+	gap: 30px;
+}
+
+.card .card2 img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.US{
+ font-weight: 700;	
+	
+}
+   
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+/****** Accommodation And Popular ***********/
+/****** tablet width is 1024            *****/
+/****** accommodation 2 rows of 3 on top and popular 1 row of 3 at the bottom  *****/
+
+/****** Accommodation And Popular ***********/
+
+.accommodation-and-popular {
+	width: 100%;
+	flex-direction: row;
+    display: flex;
+    gap: 20px;
+	margin-bottom: 20px;
+	
+}
+
+/* Responsive layout: stack boxes vertically on screens 1024px wide or narrower */
+@media (max-width: 1024px) {
+.accommodation-and-popular {
+	  display:flex;
+	flex-direction: column;
+    flex-grow: 1;
+  }
+	
+	.accommodation {
+		width: 100%;
+		display:flex;
+		 flex-grow: 1;
+	}
+	
+}
+
+
+.accommodation-and-popular section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+	justify-content: space-between;
+}
+
+
+/****** Accommodation ***********/
+.accommodation {
+    width: 66%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+/* Main section to modify the actual cards  */
+.card2 {
+  width: calc((100% - 40px) / 3); /* 3 cards per row with 2 gaps of 20px */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;/*
+  background-color: white;   background-color: white; */
+/****** 	border: 2px solid black; *****/
+	
+}
+
+.popular-cards2{
+	display:flex;
+	flex-wrap: wrap;
+gap:20px;
+
+}
+
+.popular-cards2 .card-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+	background-color: white;
+	 border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	
+
+}
+
+.popular-cards2 img {
+    height: 122px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+	border: 5px solid white;
+	object-fit: cover;
+}
+
+/****** Popular ********                                                  ***/
+.popular {
+    width: 32%;
+}
+
+	
+
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-cards .card {
+    display: flex;
+    margin-top: 33px;
+	border-radius: 20px;
+	border: 5px solid white;
+}
+
+.popular-cards img {
+    width: 33%;
+    height: 136px;
+border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	object-fit: cover;
+}
+
+.popular-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+	background-color: white;
+box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+	}
+
+.popular-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.popular-cards .card-subtitle {
+    margin: 0;
+}
+
+.popular-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+/***                                ***        To do in Marseille         ***********/
+
+.todo-container{
+	display: flex;
+	width: "100%";
+	height: "380px";
+gap:20px;
+	
+}
+
+.card3{
+	
+		margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	border-radius: 20px;
+	overflow: hidden;
+	border: 4px solid #fff;
+
+}
+
+.card-tall{	
+display: flex;
+flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	
+}
+
+.card-tall img {
+	flex-grow: 1;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;	
+	object-fit: cover;
+}
+
+.border-none {
+	border: none;
+}
+
+
+/****** footer ***********/
+
+.footercontainer {
+	background-color: var(--main-bg-color);
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.foot1 {
+	width: 33%;
+	text-decoration: none;
+}
+
+.foot1 .foot2 .foot3 a {
+	
+	text-decoration: none;
+}
+
+.foot2{
+	width: 33%;
+	
+}
+.foot3{
+	width: 33%;
+	
+}
+
+
+
+/****** Ye shall test his media 
+
+@media (max-width: 900px) {
+  .card2 {
+    width: calc((100% - 20px) / 2); /* 2 per row on tablets 
+  }
+}
+
+@media (max-width: 600px) {
+  .card2 {
+    width: 100%; /* 1 per row on mobile 
+  }
+}
+
+/****** Ye shall test his media ***********/
+>>>>>>> c20aa56619d4f97bc30e678cae74aad67f1c988a
