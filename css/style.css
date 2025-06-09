@@ -1,258 +1,7 @@
-<<<<<<< HEAD
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-}
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
-
-.fa-solid, .fa-regular {
-    color: var(--main-color);
-}
-
-.logo{
-	width: 191px;
-	height: 60px;
-}
-
-.logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-header {
-    color: #fff; /* White text color */
-    padding: 1rem 2rem; 
-    display: flex; /* Enables Flexbox */
-    justify-content: space-between; 
-    align-items: center;
-    
-}
-
-
-.menu ul {
-    list-style: none; 
-    display: flex; 
-}
-
-.menu ul li {
-    margin-left: 1.5rem;
-	padding-top: 12px;
-}
-
-.menu ul li:first-child {
-    margin-: 0; /* No margin for the first item */
-
-	
-}
-
-.menu ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem;
-    transition: color 0.3s ease; 
-	padding-top: 10px;
-border-radius: 5px;
-
-}
-
-.menu ul li a:hover {
-    color: white; 
-   
-  background-color: #0065FC;
-  font-size: 18px;
-}
-}
-.search input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-
-.body {
-    display: flex;
-    justify-content: center;
-}
-
-.main-container {
-    width: 100%;
-    padding: 0 50px;
     box-sizing: border-box;
-	justify-content: center;
-}
-
-.section-title {
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.card .card2 {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card .card2 img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutralStar {
-    color: var(--main-bg-color)
-}
-
-/****** Accommodation And Popular ***********/
-.accommodation-and-popular {
-    display: flex;
-    gap: 20px;
-}
-
-.accommodation-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-	justify-content: space-between;
-}
-
-/****** Accommodation ***********/
-.accommodation {
-    width: 871px;
-	
-}
-.accommodation-container{
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	gap: 30px;
-	
-}
-.card2{
-	display: flex;
-    width: 250px;
-    height: 207px;
-	border-radius-top-left: 20px;
-	border-radius-top-right: 20px; 
-    border: 5px;
-	box-sizing: border-box;
-}
-
-
-/****** Popular ***********/
-.popular {
-    width: 32%;
-}
-
-.popular-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.popular-cards .card {
-    display: flex;
-    margin-top: 33px;
-}
-
-.popular-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.popular-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-	background-color: white;
-	border-radius: 20px;
-}
-
-.popular-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.popular-cards .card-subtitle {
-    margin: 0;
-}
-
-.popular-cards .card-rating {
-    margin-bottom: 5px;
-}
-
-
-/****** To do in Marseille ***********/
-
-.todo-container{
-	width: "100%";
-	height: "380px";
-
-	
-}
-
-.todo{
-width: 25%;	
-display: flex;	
-}
-
-
-
-/****** footer ***********/
-
-.footercontainer {
-	background-color: var(--main-bg-color);
-	width: 100%;
-	padding: 10px;
-	display: flex;
-	flex-direction: row;
-}
-
-.foot1{
-	width: 33%;
-	text-decoration: none;
-}
-
-.foot1 a {
-	
-	text-decoration: none;
-}
-
-.foot2{
-	width: 33%;
-	
-}
-.foot3{
-	width: 33%;
-	
-}
-=======
-/****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -307,9 +56,8 @@ IN CSS ITS #TEXT
   width: 38px;
   height: 38px;
   background-color: #eee; /* light grey background */
-  border: 1px solid #ccc;
-  border-top: 0px;
-border-bottom: 0px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
 }
 
 .icon-box i {
@@ -353,13 +101,13 @@ border-bottom: 0px;
 }
 
 .menu ul li:first-child {
-    margin-: 0; /* No margin for the first item */
+    margin: auto; /* No margin for the first item */
 
 	
 }
 
 .menu ul li a {
-    text-color: #0065FC;
+    color: #0065FC;
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem;
@@ -389,8 +137,7 @@ border-bottom: 0px;
   height: 38px;
   font-size: 16px;
 	font-weight:bold;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+
   padding: 0 50px;
 }
 
@@ -404,28 +151,29 @@ border-bottom: 0px;
 
 /* Nav 2 Buttons  */
 
-#nav2-container{
+#nav2-container {
     display: flex;
 	flex-direction: row;
-    padding-bottom: 4px;
-    padding-left: 19px;
-    padding-top: 4px;
-    padding-right: 19px;
+  
 	flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .nav2 {
 	display: flex;
 	height: 50px;
-	width:151px;
-	border: 1px solid #D9D9D9;
+	width:auto;
+	border: 2px solid #D9D9D9;
+      padding-bottom: 4px;
+    padding-left: 19px;
+    padding-top: 4px;
+    padding-right: 19px;
 	border-radius: 25px;
 	font-weight:bold;
 	align-items: center;
 	justify-content: center;
 	transition: background-color 0.3s ease; /* smooth effect */
-	gap: 20px;
+	gap: 10px;
 
 }
 
@@ -442,7 +190,7 @@ border-bottom: 0px;
 
 .main-container {
     width: 100%;
-    padding: 0 50px;
+    max-width: 1440px;
     box-sizing: border-box;
 	justify-content: center;
 	 margin: auto;
@@ -451,7 +199,7 @@ border-bottom: 0px;
 .section-title {
     font-size: 22px;
     margin-top: 20px;
-    margin-bottom: 20px;
+   
 }
 
 .card .card2 {
@@ -498,21 +246,7 @@ border-bottom: 0px;
 	
 }
 
-/* Responsive layout: stack boxes vertically on screens 1024px wide or narrower */
-@media (max-width: 1024px) {
-.accommodation-and-popular {
-	  display:flex;
-	flex-direction: column;
-    flex-grow: 1;
-  }
-	
-	.accommodation {
-		width: 100%;
-		display:flex;
-		 flex-grow: 1;
-	}
-	
-}
+
 
 
 .accommodation-and-popular section {
@@ -540,13 +274,14 @@ border-bottom: 0px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  overflow: hidden;/*
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   background-color: white;   background-color: white; */
 /****** 	border: 2px solid black; *****/
 	
 }
 
-.popular-cards2{
+.popular-cards2 {
 	display:flex;
 	flex-wrap: wrap;
 gap:20px;
@@ -561,10 +296,10 @@ gap:20px;
 	background-color: white;
 	 border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-	margin-bottom: 20px;
-	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 	
-
+	padding-bottom: 15px;
+    padding-left:10px;
+gap: 4px;
 }
 
 .popular-cards2 img {
@@ -578,6 +313,10 @@ gap:20px;
 /****** Popular ********                                                  ***/
 .popular {
     width: 32%;
+    display:flex;
+    flex-direction: column;
+
+    flex-shrink: 0;
 }
 
 	
@@ -585,13 +324,14 @@ gap:20px;
 
 .popular-title {
     display: flex;
-    justify-content: space-between;
+     justify-content: space-between;
     align-items: center;
 }
 
 .popular-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
+justify-content: space-between;
 	border-radius: 20px;
 	border: 5px solid white;
 }
@@ -703,7 +443,29 @@ flex-direction: column;
 	
 }
 
+/* Responsive layout: stack boxes vertically on screens 1024px wide or narrower */
+@media (max-width: 1024px) {
+.accommodation-and-popular {
+	  display:flex;
+	flex-direction: column;
+    flex-grow: 1;
+  }
+	
+	.accommodation {
+		width: 100%;
+		display:flex;
+		 flex-grow: 1;
+	}
+	
+.popular {
+    width: 100%;
+    display:flex;
+    flex-direction: row
+    flex-shrink; 0;
+    flex-grow:1;
+}
 
+}
 
 /****** Ye shall test his media 
 
@@ -720,4 +482,3 @@ flex-direction: column;
 }
 
 /****** Ye shall test his media ***********/
->>>>>>> c20aa56619d4f97bc30e678cae74aad67f1c988a
