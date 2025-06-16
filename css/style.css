@@ -425,7 +425,17 @@ flex-direction: column;
 }
 
 
-.foot1 .foot2 .foot3 {
+.foot1   {
+	width: 33%;
+	
+}
+
+.foot2{
+	width: 33%;
+	
+}
+
+.foot3{
 	width: 33%;
 	
 }
@@ -453,4 +463,13 @@ flex-direction: column;
     flex-grow: 1;
 }
  
+.footercontainer {
+	background-color: var(--main-bg-color);
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+}
+
 }
