@@ -2,6 +2,7 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin: 0;
 }
 
 
@@ -30,24 +31,49 @@ IN CSS ITS #TEXT
     color: var(--main-color);
 }
 
-#top{
-	display:flex;
-	gap: 60%;
-
+header {
+   
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-bottom: 20px;
 }
 
-.top {
-  max-width: 1440px;
-	display:flex;
-	align-items: center;
-  text-align: right;
-  margin-inline: auto;
-}
 
 .top img{
 	height:19px;
 	width: 62px;
 }
+
+.menu {
+  display: flex;   
+    flex-direction: row;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* space between menu items */
+}
+
+
+.menu ul li a {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Default link color */
+    font-weight: 500;
+    display: inline-block; /* Allows padding and border */
+    padding-top: 10px; /* Space above the text for the border */
+    border-top: 3px solid transparent; /* Invisible border by default */
+    transition: color 0.3s ease, border-top-color 0.3s ease; /* Smooth transition */
+}
+
+.menu ul li a:hover,
+.menu ul li a.active { /* Style for hover and active states */
+    color: var(--main-color); /* Change text color to blue */
+    border-top-color: var(--main-color); /* Make the border blue */
+}
+
 
 .icon-box {
   display: flex;
@@ -77,53 +103,7 @@ border-bottom-left-radius: 15px;
     font-weight: bold;
 }
 
-.header {
-    color: #fff; /* White text color */
-    padding: 1rem 2rem; 
-   
-    gap: 20px; 
-   
-    
-}
-.menu{
-	margin-left: auto;
-}
 
-.menu ul {
-    list-style: none; 
-    display: flex; 
-
-}
-
-.menu ul li {
-    margin-left: 1.5rem;
-    /* [disabled]padding-top: 12px; */
-}
-
-.menu ul li:first-child {
-    margin: auto; /* No margin for the first item */
-
-	
-}
-
-.menu ul li a {
-    color: #0065FC;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem;
-    transition: color #0065FC 0.3s ease; 
-	padding-top: 10px;
-
-
-}
-
-.menu ul li a:hover {
-    color: #0065FC;
-   
-    font-size: 18px;
-    text-align: center;
-	border-top: 2px solid #0065FC;
-}
 
 /* Search works   */
 
@@ -186,6 +166,9 @@ border-bottom-left-radius: 15px;
 .body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .main-container {
@@ -424,10 +407,16 @@ flex-direction: column;
 	text-decoration: none;
 }
 
+.footercontainer a {
+color: black;
+text-decoration: none;
+	padding-bottom: 10px;
+
+}
 
 .foot1   {
 	width: 33%;
-	
+
 }
 
 .foot2{
@@ -441,8 +430,10 @@ flex-direction: column;
 }
 
 
-/* Responsive layout: stack boxes vertically on screens 1024px wide or narrower */
+
 @media (max-width: 1024px) {
+
+
 .accommodation-and-popular {
 	  display:flex;
 	flex-direction: column;
@@ -473,3 +464,50 @@ flex-direction: column;
 }
 
 }
+
+
+@media (max-width: 375px) {
+header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top {
+padding-bottom: 10px;
+}
+.menu {
+   
+    margin: auto;
+    width: 100%;
+}
+
+.menu ul {
+    margin: auto;
+    align-items: center; /* Center align the items */
+    justify-content: space-between;
+}
+
+
+.menu ul li a {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Default link color */
+    font-weight: 500;
+    display: inline-block; /* Allows padding and border */
+    padding-bottom: 5px; /* Space above the text for the border */
+    border-bottom: 3px solid transparent; /* Invisible border by default */
+    transition: color 0.3s ease, border-top-color 0.3s ease; /* Smooth transition */
+}
+
+.menu ul li a:hover,
+.menu ul li a.active { /* Style for hover and active states */
+    color: var(--main-color); /* Change text color to blue */
+    border-bottom-color: var(--main-color); /* Make the border blue */
+}
+
+
+
+
+
+}
+
