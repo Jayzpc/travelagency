@@ -116,13 +116,32 @@ border-bottom-left-radius: 15px;
 #search input[type="text"] {
   height: 38px;
   font-size: 16px;
-	font-weight:bold;
-
+  font-weight:bold;
   padding: 0 50px;
+  border: 1px solid #F2F2F2; /* Add a subtle border to match the design */
+  border-left: none; /* Remove left border to blend with icon-box */
+  border-right: none; /* Remove right border to blend with button */
+  background-color: white; /* Ensure background is white */
 }
 
-#search input[type="image"] {
-  height: 38px;
+/* Hide mobile button by default */
+.search-button-mobile {
+    display: none;
+}
+
+/* Style for the new desktop search button */
+.search-button-desktop {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border: none;
+    height: 38px;
+    padding: 0 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
 }
 /* /Search  */
 
@@ -480,23 +499,27 @@ padding-bottom: 10px;
    
     margin: auto;
     width: 100%;
+    border-bottom: 1px solid #D9D9D9; /* Add a bottom border for separation */
 }
 
 .menu ul {
     margin: auto;
     align-items: center; /* Center align the items */
-    justify-content: space-between;
+    
 }
 
 
 .menu ul li a {
-    text-decoration: none; /* Remove default underline */
+    justify-content: space-between;
+   /* text-decoration: none;  Remove default underline */
     color: #333; /* Default link color */
     font-weight: 500;
     display: inline-block; /* Allows padding and border */
-    padding-bottom: 5px; /* Space above the text for the border */
+    padding-top: 0; /* Remove top padding from desktop style */
+    padding-bottom: 15px; /* Space below the text for the underline */
+    border-top: none; /* Remove the top border from the desktop style */
     border-bottom: 3px solid transparent; /* Invisible border by default */
-    transition: color 0.3s ease, border-top-color 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 .menu ul li a:hover,
@@ -505,9 +528,52 @@ padding-bottom: 10px;
     border-bottom-color: var(--main-color); /* Make the border blue */
 }
 
+headertext{
+    padding-top: 20px;
+}
+/* padding only  */
 
-
-
-
+/* On mobile, the search bar uses a magnifying glass icon for the button */
+#search {
+    width: 100%; /* Ensure search form takes full width */
+    padding-top:15px;
 }
 
+#search input[type="text"] {
+    flex-grow: 1; /* Allow input to fill available space */
+    width: 100%; /* Fallback for older browsers */
+     /* Adjust padding for smaller screens */
+}
+
+#search .search-button-desktop {
+    display: none; /* Hide the desktop search button */
+}
+
+.search-button-mobile, #search .search-button-mobile {
+    display: flex; /* Show mobile button */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 0 15px 15px 0; /* Round corners only on the right side */
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent the button from shrinking */
+}
+
+#search .search-button-mobile .fa-magnifying-glass {
+    color: white;
+}
+
+#nav2title {
+    flex-basis: 100%; /* Make the title take the full width, pushing buttons to the next line */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+#nav2-container {
+    /* The desktop 'display: flex' and 'flex-wrap: wrap' are sufficient for the container. */
+    /* The filter buttons will now wrap below the full-width title. */
+}
+
+}
