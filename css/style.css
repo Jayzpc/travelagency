@@ -31,15 +31,20 @@ IN CSS ITS #TEXT
     color: var(--main-color);
 }
 
-header {
-   
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding-bottom: 20px;
-align-content: center;
+.flush{
+
+
 }
 
+header {
+    padding-bottom: 20px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .top img{
 	height:19px;
@@ -67,8 +72,6 @@ align-content: center;
     padding-top: 10px; /* Space above the text for the border */
     border-top: 3px solid transparent; /* Invisible border by default */
     transition: color 0.3s ease, border-top-color 0.3s ease; /* Smooth transition */
-    margin-bottom: -5px; /* Adjust to align with the bottom of the icon */
-    width: 100%; /* Make the link fill the available space */
 }
 
 .menu ul li a:hover,
@@ -189,8 +192,8 @@ border-bottom-left-radius: 15px;
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .main-container {
@@ -199,6 +202,7 @@ border-bottom-left-radius: 15px;
     box-sizing: border-box;
 	justify-content: center;
 	 margin: auto;
+     padding-top: 0px;
 }
 
 .section-title, .section-title2 {
@@ -503,13 +507,19 @@ text-decoration: none;
 
 @media (max-width: 375px) {
 header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+}
+
+.accommodation-and-popular section {
+    border-radius: 0%;
 }
 
 .top {
-padding-bottom: 10px;
+    flex-direction: column;
+    padding: 0; /* Remove padding to allow children to span full width */
+}
+
+.top > a {
+    padding: 10px 0; /* Add vertical spacing for the logo */
 }
 .menu {
    
@@ -519,19 +529,22 @@ padding-bottom: 10px;
 }
 
 .menu ul {
-    margin: auto;
-    align-items: center; /* Center align the items */
+    display:flex;
     width: 100%;
-    justify-content: center; /* Center the menu items */
 }
 
+.menu ul li {
+    flex-grow: 1; /* Make list items share space equally */
+}
 
 .menu ul li a {
-    justify-content: space-between;
+    display: block;
+    width: 100%;
+    text-align: center;
    /* text-decoration: none;  Remove default underline */
     color: #333; /* Default link color */
     font-weight: 500;
-    display: inline-block; /* Allows padding and border */
+    /* Allows padding and border */
     padding-top: 0; /* Remove top padding from desktop style */
     padding-bottom: 15px; /* Space below the text for the underline */
     border-top: none; /* Remove the top border from the desktop style */
