@@ -8,19 +8,6 @@
 
 
 
-/* NOTES
-
-WHEN MAKING AN ID = TEXT
-
-IN CSS ITS #TEXT
-
-
-
-
-
-
-*/
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -33,7 +20,7 @@ IN CSS ITS #TEXT
 
 .flush{
 
-
+margin-left: 10px;
 }
 
 header {
@@ -196,7 +183,7 @@ border-bottom-left-radius: 15px;
     margin-right: 5px;
 }
 
-.main-container {
+.main-container .flush {
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
@@ -507,6 +494,7 @@ text-decoration: none;
 
 @media (max-width: 375px) {
 header {
+    
 }
 
 .accommodation-and-popular section {
@@ -559,7 +547,7 @@ header {
     border-bottom-color: var(--main-color); /* Make the border blue */
 }
 
-.headertext{
+#headertext{
     padding-top: 20px;
 }
 /* padding only  */
