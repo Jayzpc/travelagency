@@ -18,10 +18,37 @@
     color: var(--main-color);
 }
 
-.flush{
 
-margin-left: 10px;
+.heading{
+display: flex;
+flex-direction: row;
 }
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 1000px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 1px solid grey;
+}
+
+
+
+.circleicon{
+  position: absolute;
+  font-size: 20px;
+  top: 10%;
+  left: 38%;
+  color: #0065FC;
+}
+
+ .circletext{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+ }
+
 
 header {
     padding-bottom: 20px;
@@ -35,19 +62,23 @@ header {
 
 .top img{
 	height:19px;
-	width: 62px;
+	width: 82px;
+  gap:20px;
+
+
 }
 
 .menu {
   display: flex;   
     flex-direction: row;
+    
 }
 .menu ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 20px; /* space between menu items */
+    gap:20px; /* space between menu items */
 }
 
 
@@ -104,6 +135,7 @@ border-bottom-left-radius: 15px;
   display: flex;
   align-items: center;
   gap: 0px; /* optional spacing */
+  padding-left: 20px
 }
 
 #search input[type="text"] {
@@ -145,10 +177,13 @@ border-bottom-left-radius: 15px;
 
 #nav2-container {
     display: flex;
-	flex-direction: row;
-  
-	flex-wrap: wrap;
-  gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav2title{
+    flex-basis: 100%;
 }
 
 .nav2 {
@@ -185,7 +220,8 @@ border-bottom-left-radius: 15px;
 
 .headertext {
     padding-top: 20px;
-    margin-left:20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .largetitle{
@@ -205,7 +241,7 @@ margin-left:20px;
 
 .section-title, .section-title2 {
     font-size: 22px;
-    margin-top: 20px;
+    margin-left: 20px; 
 }
 
 .card .card2 {
@@ -222,7 +258,7 @@ margin-left:20px;
 
 .card-title {
     font-size: 16px;
-    padding-left: 10px;
+   /* padding-left: 10px; */
 }
 
 .euro {
@@ -421,32 +457,33 @@ padding-bottom: 10px;
 	padding: 10px;
 	display: flex;
 	flex-direction: row;
-	text-decoration: none;
 }
 
-.footercontainer a {
-color: black;
-text-decoration: none;
-	padding: 10px;
-
-}
-
-.foot1   {
+.foot1, .foot2, .foot3 {
 	width: 33%;
-
+   
 }
 
-.foot2{
-	width: 33%;
-	
+.footTitle {
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+/* Add space below the title */
+    color: #333; /* Ensure the title is visible */
 }
 
-.foot3{
-	width: 33%;
-	
+.footText {
+    margin-bottom: 10px; /*Add space between title and text */
+    font-size: 1.1rem; /* Adjust font size for better readability */
+    color: #555; /* Slightly lighter color for text */
+     text-decoration: none;
 }
 
-
+.footText a {
+    text-decoration: none;
+   color: black;  /* Ensure links are visible */
+}
 
 @media (max-width: 1024px) {
 
@@ -491,6 +528,39 @@ text-decoration: none;
 	text-decoration: none;
 }
 
+.footercontainer {
+	background-color: var(--main-bg-color);
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+.foot1, .foot2, .foot3 {
+	width: 33%;
+   
+}
+
+.footTitle {
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+/* Add space below the title */
+    color: #333; /* Ensure the title is visible */
+}
+
+.footText {
+    margin-bottom: 10px; /*Add space between title and text */
+    font-size: 1.1rem; /* Adjust font size for better readability */
+    color: #555; /* Slightly lighter color for text */
+
+}
+
+.footText a {
+     text-decoration: none;
+     color: black;
 }
 
 
@@ -501,7 +571,13 @@ text-decoration: none;
 
 .top {
     flex-direction: column;
-    padding: 0; /* Remove padding to allow children to span full width */
+     /* Remove padding to allow children to span full width */
+}
+
+.top img {.
+    height:19px;
+	width: 82px;
+    padding-left:20px;
 }
 
 .top > a {
@@ -517,6 +593,7 @@ text-decoration: none;
 .menu ul {
     display:flex;
     width: 100%;
+    gap: 0; /* Remove gap on mobile */
 }
 
 .menu ul li {
@@ -547,6 +624,8 @@ text-decoration: none;
 
 .headertext {
     padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom:20px;
 }
 /* padding only  */
 
@@ -584,18 +663,18 @@ text-decoration: none;
     color: white;
 }
 
-.nav2-container {
+#nav2-container {
     margin-left: 20px;
 }
 
-#nav2title {
-    flex-basis: 100%; /* Make the title take the full width, pushing buttons to the next line */
-    margin-bottom: 10px; /* Add some space below the title */
-}
 .accommodation-and-popular {
     flex-direction: column-reverse;
+    /* Remove border radius for mobile */
 }
 
+.accommodation-and-popular section{
+    border-radius: 0;
+}
 .popular-cards {
     display: flex; /* Change from grid to flex for mobile */
     flex-direction: column; /* Stack cards vertically */
@@ -627,6 +706,11 @@ text-decoration: none;
     width: 100%;
 }
 
+.card-title3 {
+ padding-left: 10px; 
+ padding-top: 5px;
+padding-bottom: 5px;
+}
 
 .footercontainer{
     flex-direction: column; /* Stack footer items vertically */
@@ -637,6 +721,26 @@ text-decoration: none;
 	margin-bottom: 30px;
 }
 
+.footTitle {
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: 15px; /* Add space below the title */
+    color: #333; /* Ensure the title is visible */
+}
+
+.footText {
+    margin-left: 15px;
+    margin-bottom: 10px; /*Add space between title and text */
+    font-size: 1.1rem; /* Adjust font size for better readability */
+    color: #555; /* Slightly lighter color for text */
+}
+
+.footText a {
+    text-decoration: none;
+   color: black; /* Ensure links are visible */
+}
 /* backup JB */
 
-}
+}}
