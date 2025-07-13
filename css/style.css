@@ -200,6 +200,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+    padding-left: 20px;
 }
 
 #nav2title {
@@ -727,9 +728,7 @@ header {
             color: white;
         }
 
-        #nav2-container {
-            margin-left: 20px;
-        }
+    
 
         .accommodation-and-popular {
             flex-direction: column-reverse;
