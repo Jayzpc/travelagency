@@ -2,11 +2,22 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-
+    text-decoration: none;
 }
 
 
+.card-link::after {
+    content: "";
+    position: absolute;  
+    top: 0;  
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
 
+.card-link a {
+    text-decoration: none;
+}
 
 :root {
     --main-color: #0065FC;
@@ -39,7 +50,7 @@
 
 .circleicon {
     position: absolute;
-    font-size: 20px;
+    font-size: 13px;
     top: 10%;
     left: 38%;
     color: #0065FC;
@@ -63,9 +74,9 @@ header {
 }
 
 .top img {
-    height: 19px;
-    width: 82px;
-    gap: 20px;
+    height: 24px;
+    padding-top: 10px;
+
 
 
 }
@@ -94,7 +105,7 @@ header {
     font-weight: 500;
     display: inline-block;
     /* Allows padding and border */
-    padding-top: 10px;
+    padding: 20px 0;
     /* Space above the text for the border */
     border-top: 3px solid transparent;
     /* Invisible border by default */
@@ -150,7 +161,7 @@ header {
     align-items: center;
     gap: 0px;
     /* optional spacing */
-    padding-left: 20px
+
 }
 
 #search input[type="text"] {
@@ -200,7 +211,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    padding-left: 20px;
+   
 }
 
 #nav2title {
@@ -232,11 +243,16 @@ header {
 
 }
 
+body {
+    margin: 0;
+
+}
+
 .body {
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    margin-left: 5px;
+
     margin-right: 5px;
 }
 
@@ -254,6 +270,7 @@ header {
 }
 
 .main-container {
+    margin: auto;
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
@@ -281,6 +298,7 @@ header {
 
 .card-title {
     font-size: 16px;
+    text-decoration: none;
     /* padding-left: 10px; */
 }
 
@@ -323,8 +341,13 @@ header {
     gap: 30px;
 }
 
+.card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
 /* Main section to modify the actual cards  */
 .card2 {
+    position: relative;
     width: calc((100% - 40px) / 3);
     /* 3 cards per row with 2 gaps of 20px */
     box-sizing: border-box;
@@ -619,8 +642,9 @@ header {
 
         .top img {
             height: 19px;
-            width: 82px;
+        
             padding-left: 20px;
+            padding-top: 10px;
         }
 
         .top>a {
