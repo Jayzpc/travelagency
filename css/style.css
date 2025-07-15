@@ -464,14 +464,13 @@ body {
 .todo-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
 
 }
 
 .card3 {
-    width: auto;
+    width: 100%;
     /*height: 165px;*/
     margin-bottom: 1rem;
     display: flex;
@@ -485,6 +484,7 @@ body {
 }
 
 .card-tall {
+    position: relative;
     display: flex;
     flex-direction: column;
     /*	box-shadow: 0 5px 20px rgba(0,0,0,0.2); double shadow issue*/
@@ -639,7 +639,7 @@ body {
         text-decoration: none;
         color: black;
     }
-
+}
 
     @media (max-width: 375px) {
         * {
@@ -652,7 +652,7 @@ body {
         }
 
         .top img {
-            height: 19px;
+            height: 30px;
         
             padding-left: 20px;
             padding-top: 10px;
@@ -820,11 +820,15 @@ body {
             padding-bottom: 5px;
         }
 
-        .footercontainer {
-            flex-direction: column;
-            /* Stack footer items vertically */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
 
-        }
+}
+
 
         .foot1,
         .foot2,
@@ -863,4 +867,3 @@ body {
         /* backup JB */
 
     }
-}
