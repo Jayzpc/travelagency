@@ -51,16 +51,15 @@
 
 .circleicon {
     position: absolute;
-    font-size: 13px;
+    font-size: 10px;
     top: 10%;
-    left: 38%;
     color: #0065FC;
 }
 
 .circletext {
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
+
 }
 
 
@@ -276,7 +275,7 @@ body {
     max-width: 1440px;
     box-sizing: border-box;
     justify-content: center;
-    padding-top: 0px;
+    padding: 0 30px;
 }
 
 .section-title,
@@ -643,8 +642,16 @@ body {
 
     @media (max-width: 375px) {
         * {
-            margin: 0px;
+            margin: 0pxpx;
         }
+
+        .main-container {
+            padding: 0;
+            /* Reduce padding for smaller screens */
+        }
+.largetitle{
+    margin-left: 20px;
+}
 
         .top {
             flex-direction: column;
@@ -658,7 +665,7 @@ body {
             padding-top: 10px;
         }
 
-        .top>a {
+        .top a {
             padding: 10px 0;
             /* Add vertical spacing for the logo */
         }
@@ -715,11 +722,13 @@ body {
 
         .headertext {
             padding-top: 20px;
-        
+        margin-left: 20px;
             padding-bottom: 20px;
         }
 
-        /* padding only  */
+        #nav2-container {
+            Margin-left: 20px;
+        }
 
         /* On mobile, the search bar uses a magnifying glass icon for the button */
         #search {
@@ -763,7 +772,9 @@ body {
             color: white;
         }
 
-    
+    .circletext{
+            margin-left: 20px;
+        }
 
         .accommodation-and-popular {
             flex-direction: column-reverse;
@@ -829,7 +840,10 @@ body {
 
 }
 
-
+.footercontainer {
+                   display: flex;
+            flex-direction: column;
+        }
         .foot1,
         .foot2,
         .foot3 {
